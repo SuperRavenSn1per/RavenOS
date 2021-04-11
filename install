@@ -1,4 +1,4 @@
-id = os.getComputerId()
+id = os.getComputerID()
 dirs = {}
 files = {}
 
