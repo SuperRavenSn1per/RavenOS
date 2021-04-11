@@ -1,0 +1,13 @@
+id = os.getComputerId()
+dirs = {}
+files = {}
+
+function install(file)
+
+end
+
+term.setBackgroundColor(colors.lime)
+term.setTextColor(colors.white)
+term.clear()
+term.setCursorPos(1,1)
+print("Computer ID: "..id)
