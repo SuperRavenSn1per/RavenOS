@@ -30,6 +30,7 @@ for i,file in pairs(files) do
   write("RavenOS")
   paintutils.drawLine(w / 2 - 10, h / 2 + 1, w / 2 - 10 + percentBar, h / 2 + 1, colors.green)
   term.setBackgroundColor(colors.lime)
+  term.setCursorPos(w / 2 + 11, h / 2 + 1)
   write(" "..percent.."%")
   term.setCursorPos(1,1)
   write("ID: "..id)
