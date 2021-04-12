@@ -21,11 +21,11 @@ term.setCursorPos(1,1)
 for i,dir in pairs(dirs) do
   fs.makeDir(dir)
 end
-paintutils.drawLine(w / 2 - 5, h / 2 + 1, w / 2 + 5, h / 2 + 1, colors.lightGray)
+paintutils.drawLine(w / 2 - 4, h / 2 + 1, w / 2 + 5, h / 2 + 1, colors.lightGray)
 term.setBackgroundColor(colors.lime)
 for i,file in pairs(files) do
   percent = math.floor(i/#files * 100)
-  percentBar = math.floor(20 * percent / 100)
+  percentBar = math.floor(10 * percent / 100)
   term.setCursorPos(w / 2 - string.len("RavenOS") / 2, h / 2 - 1)
   write("RavenOS")
   paintutils.drawPixel(w / 2 - 5 + percentBar, h / 2 + 1, colors.green)
