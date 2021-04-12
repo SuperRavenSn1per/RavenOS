@@ -1,13 +1,31 @@
+w,h = term.getSize()
 id = os.getComputerID()
+
+mainUrl = "https://raw.githubusercontent.com/SuperRavenSn1per/RavenOS/"
+branch = "main"
+
 dirs = {}
 files = {}
 
-function install(file)
-
+function install(installFile)
+  content = http.get(mainUrl..branch.."/"..installFile).readAll()
+  f = fs.open(file)
+  f.write(info)
+  f.close()
 end
 
 term.setBackgroundColor(colors.lime)
 term.setTextColor(colors.white)
 term.clear()
 term.setCursorPos(1,1)
-print("Computer ID: "..id)
+for i,dir in pairs(dirs) do
+  fs.makeDir(dir)
+end
+for i,file in pairs(files) do
+  print("ID: "..id)
+  term.setCursorPos(1,h)
+  print("File: "..file)
+  term.setCursorPos(w - string.len(i.."/"..#files,h)
+  print(i.."/"..#files)
+  install(file)
+end
