@@ -25,7 +25,7 @@ for i,file in pairs(files) do
   print("ID: "..id)
   term.setCursorPos(1,h)
   print("File: "..file)
-  term.setCursorPos(w - string.len(i.."/"..#files,h)
+  term.setCursorPos(w - string.len(i.."/"..#files,h))
   print(i.."/"..#files)
   install(file)
 end
