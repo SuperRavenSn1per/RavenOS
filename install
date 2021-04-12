@@ -22,6 +22,7 @@ for i,dir in pairs(dirs) do
   fs.makeDir(dir)
 end
 paintutils.drawLine(w / 2 - 5, h / 2 + 1, w / 2 + 5, h / 2 + 1, colors.lightGray)
+term.setBackgroundColor(colors.lime)
 for i,file in pairs(files) do
   term.setCursorPos(w / 2 - string.len("RavenOS") / 2, h / 2 - 1)
   write("RavenOS")
