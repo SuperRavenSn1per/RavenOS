@@ -25,8 +25,9 @@ paintutils.drawLine(w / 2 - 5, h / 2 + 1, w / 2 + 5, h / 2 + 1, colors.lightGray
 for i,file in pairs(files) do
   term.setCursorPos(w / 2 - string.len("RavenOS") / 2, h / 2 - 1)
   write("RavenOS")
-  paintutils.drawPixel(w / 2 - 5 + i, h / 2 - 1, colors.green)
+  paintutils.drawPixel(w / 2 - 5 + i, h / 2 + 1, colors.green)
   term.setBackgroundColor(colors.lime)
+  term.setCursorPos(1,1)
   write("ID: "..id)
   term.setCursorPos(1,h)
   write("File: "..file)
