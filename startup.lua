@@ -1,5 +1,12 @@
 apis = {"ru.lua"}
 
+options = {
+  [0] = "os/login.lua",
+  [1] = "",
+  [2] = "os/terminal",
+  [3] = "os/shutdown",
+}
+
 local sOption = 0
 
 term.clear()
