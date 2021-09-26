@@ -11,8 +11,7 @@ function drawOutlinedBox(xDiff, yDiff, fillColor, outlineColor)
 end
 
 function getMid()
-    return math.floor(w / 2)
-    return math.floor(h / 2)
+    return math.floor(w / 2), math.floor(h / 2)
 end
 
 function termColors(txtColor, bgColor)
