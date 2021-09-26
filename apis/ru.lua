@@ -6,8 +6,8 @@ function centerWrite(text, yOffset)
 end
 
 function drawOutlinedBox(xDiff, yDiff, fillColor, outlineColor)  
-    paintutils.drawFilledBox(math.floor(w / 2 - xDiff), math.floor(y / 2 - yDiff), math.floor(w / 2 + xDiff), math.floor(w / 2 + yDiff), fillColor)
-    paintutils.drawBox(math.floor(w / 2 - xDiff), math.floor(y / 2 - yDiff), math.floor(w / 2 + xDiff), math.floor(w / 2 + yDiff), outlineColor)
+    paintutils.drawFilledBox(math.floor(w / 2 - xDiff), math.floor(h / 2 - yDiff), math.floor(w / 2 + xDiff), math.floor(w / 2 + yDiff), fillColor)
+    paintutils.drawBox(math.floor(w / 2 - xDiff), math.floor(h / 2 - yDiff), math.floor(w / 2 + xDiff), math.floor(w / 2 + yDiff), outlineColor)
 end
 
 function getMid()
