@@ -23,7 +23,7 @@ print("> APIs loaded")
 term.clear()
 while true do
     term.clear()
-    ru.centerWrite("-[ Raven OS Startup ]-", -3)
+    ru.centerWrite("-[ RavenOS Startup ]-", -3)
     ru.centerWrite((sOption == 0 and "> Normal <" or "Normal"), -1)
     ru.centerWrite((sOption == 1 and "> Safe <" or "Safe"), 0)
     ru.centerWrite((sOption == 2 and "> Terminal <" or "Terminal"), 1)
