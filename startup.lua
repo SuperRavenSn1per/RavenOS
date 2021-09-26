@@ -3,8 +3,8 @@ apis = {"ru.lua"}
 options = {
   [0] = "os/login.lua",
   [1] = "",
-  [2] = "os/terminal",
-  [3] = "os/shutdown",
+  [2] = "os/terminal.lua",
+  [3] = "os/shutdown.lua",
 }
 
 local sOption = 0
