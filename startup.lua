@@ -34,5 +34,8 @@ while true do
         else
           sOption = 3
         end
+    elseif key == 28 then
+        shell.run(options[sOption])
+    end
     end
 end
